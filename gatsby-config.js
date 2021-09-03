@@ -4,14 +4,24 @@ module.exports = {
     title: "Notes",
   },
   plugins: [
-    "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "Subjects",
+        path: "./subjects/",
       },
-      __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          "gatsby-remark-images",
+          "gatsby-remark-katex"
+        ]
+      }
+    },
+    "@chakra-ui/gatsby-plugin"
   ],
 };

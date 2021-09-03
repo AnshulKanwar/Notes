@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Data Structures",
+        "url": "ds"
+    },
+    {
+        "name": "Numerical Analysis",
+        "url": "na"
+    },
+    {
+        "name": "Computer Architecture and Organization",
+        "url": "cao"
+    },
+    {
+        "name": "Discrete Mathematical Structures",
+        "url": "dms"
+    },
+    {
+        "name": "Operating Systems",
+        "url": "os"
+    },
+    {
+        "name": "Practial Computing",
+        "url": "pc"
+    }
+]
