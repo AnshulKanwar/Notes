@@ -29,10 +29,12 @@
     "gatsby-plugin-mdx": "^2.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-remark-images": "^5.10.0",
-    "gatsby-remark-katex": "^5.10.0",
     "gatsby-source-filesystem": "^3.13.0",
     "katex": "^0.13.18",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-latex": "^2.0.0",
+    "rehype-katex": "^4.0.0",
+    "remark-math": "^3.0.1"
   }
 }

@@ -16,12 +16,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
-        gatsbyRemarkPlugins: [
-          "gatsby-remark-images",
-          "gatsby-remark-katex"
-        ]
-      }
+        gatsbyRemarkPlugins: ["gatsby-remark-images"],
+        remarkPlugins: [require("remark-math")],
+        rehypePlugins: [require("rehype-katex")],
+      },
     },
-    "@chakra-ui/gatsby-plugin"
+    "@chakra-ui/gatsby-plugin",
   ],
 };

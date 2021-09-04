@@ -13,10 +13,11 @@ import {
   Td,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Latex from 'react-latex'
 
 import Alert from './Alert'
 
-const shortcodes = { Text, Alert }
+const shortcodes = { Text, Alert, Latex }
 
 const components = {
   ...shortcodes,

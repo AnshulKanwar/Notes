@@ -32,7 +32,7 @@ Can be visualized in the form of a matrix as
 ## 1D array - address calculation
 
 <Alert status="info" title="Formula for calculating Address">
-  <Text>Address of A[i] = B + W * (i - LB)</Text>
+  <Text><Latex>Address of $A[i] = B + W * (i - LB)$</Latex></Text>
   <Text color="gray.600">Where,</Text>
   <Text color="gray.600">B = Base Address</Text>
   <Text color="gray.600">W = Number of bytes used to store a singe array element</Text>
@@ -44,14 +44,14 @@ Can be visualized in the form of a matrix as
 
 Consider a 1D character array, where each character takes 1 byte of storage  
 If the base address (B) = 1200 then,  
-**Address of A[i] = B + W * (i - LB)**  
-Address of A[0] = 1200 + 1 * (0 - 0) = 1200  
-Address of A[1] = 1200 + 1 * (1 - 0) = 1201  
+Address of $A[i] = B + W * (i - LB)$  
+Address of $A[0] = 1200 + 1 * (0 - 0) = 1200$  
+Address of $A[1] = 1200 + 1 * (1 - 0) = 1201$  
 ...  
-Address of A[10] = 1200 + 1 * (10 - 0) = 1210  
+Address of $A[10] = 1200 + 1 * (10 - 0) = 1210$  
 
 ### Example - 2
 
-If LB = 5, Loc(A[LB]) = 1200, and W = 4 then find Loc(A[8])?  
-Loc(A[8]) = Loc(A[5]) + 4 * (8 - 5) = 1212  
+If $LB = 5$, $Loc(A[LB]) = 1200$, and $W = 4$ then find $Loc(A[8])$?  
+Answer: $Loc(A[8]) = Loc(A[5]) + 4 * (8 - 5) = 1212$  
   
