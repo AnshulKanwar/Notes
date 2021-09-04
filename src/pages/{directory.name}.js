@@ -14,8 +14,9 @@ import Layout from "../components/layout";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Subject = ({ data, location }) => {
+  const subject = location.state && location.state.subject
   return (
-    <Layout pageTitle={location.state.subject}>
+    <Layout pageTitle={subject}>
       <SimpleGrid columns={1} spacing={4}>
         {data.allFile.nodes.map((node) => (
           <Box h="100px" p={5} boxShadow="base">
@@ -32,7 +33,7 @@ const Subject = ({ data, location }) => {
                 as={GatsbyLink}
                 to={`/${node.childMdx.slug}`}
                 state={{
-                  subject: location.state.subject,
+                  subject: subject,
                   chapter: node.childMdx.frontmatter.title,
                 }}
                 _hover={{ textDecoration: "none" }}

@@ -31,7 +31,7 @@ const Toc = ({ items }) => {
       <Heading as="h2" fontSize="md" mb={2}>
         In This Chapter
       </Heading>
-      <TocList items={items} />
+      {items && <TocList items={items} />}
     </Box>
   );
 };

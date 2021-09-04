@@ -11,11 +11,13 @@ module.exports = {
       options: {
         name: "Subjects",
         path: "./subjects/",
+          ignore: ['/ds/images/*', 'images', '*/images', '*/*/images', '**/*\.png', '/ds/images', '**/images']
       },
     },
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: ['.mdx'],
         gatsbyRemarkPlugins: ["gatsby-remark-images"],
         remarkPlugins: [require("remark-math")],
         rehypePlugins: [require("rehype-katex")],
